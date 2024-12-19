@@ -1,0 +1,11 @@
+# Verify that a user can search for 0 itineraries
+
+# commands to execute:
+search "Seattle WA" "Boston MA" 1 1 0
+quit
+*
+
+# expected output:
+No flights match your selection
+Goodbye
+*

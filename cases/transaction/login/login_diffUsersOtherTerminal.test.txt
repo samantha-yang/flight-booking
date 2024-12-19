@@ -1,0 +1,36 @@
+# Create two different users on different terminals and attempt to
+# login into the other user on the opposite terminal.
+
+# commands:
+create user1 user1 100
+login user2 user2
+quit
+*
+
+# expected ouptut:
+Created user user1
+Logged in as user2
+Goodbye
+|
+Created user user1
+Login failed
+Goodbye
+*
+
+##################### Terminal #2: #####################
+
+# commands:
+create user2 user2 100
+login user1 user1
+quit
+*
+
+# expected output:
+Created user user2
+Logged in as user1
+Goodbye
+|
+Created user user2
+Login failed
+Goodbye
+*
